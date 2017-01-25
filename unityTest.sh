@@ -13,7 +13,7 @@ download_unity_package() {
     SAVE_PATH="../unitypackages/$PACKAGE_NAME"
     if [ ! -f "$SAVE_PATH" ]; then
         echo "Download $PACKAGE_NAME"
-        curl -o "$SAVE_PATH" http://staging.sdkbox.com/installer/v1/"$PACKAGE_NAME"
+        curl -o "$SAVE_PATH" http://staging.sdkbox.com/unity/"$PACKAGE_NAME"
     fi
 }
 
